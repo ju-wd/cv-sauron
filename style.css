@@ -79,7 +79,7 @@ body {
     margin-bottom: 2rem;
     width: 90%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
 
 }
@@ -88,21 +88,44 @@ body {
     width: 50%;
 }
 
+.skills img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
 .bar-container,
 .bar-progress {
-    border-radius: 1rem;
+    border-radius: 3rem;
 }
 
 
 .bar-container {
     width: 35%;
-    border: solid;
+    background-color: rgb(200, 85, 23);
     height: 1rem;
-    border-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bar-container p {
+    width: fit-content;
+    font-size: smaller;
+
+
 }
 
 .bar-progress {
     width: 80%;
-    height: 100%;
+
     background-color: var(--second-color);
 }
+
+/* .bar-fill {
+    height: 85%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 18%;
+    background-color: var(--main-color);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+} */
