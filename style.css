@@ -1,0 +1,108 @@
+:root {
+    --main-color: #E96820;
+    --second-color: rgba(0, 0, 0, 0.947);
+    --white-color: aliceblue;
+    --main-font: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--second-color);
+    font-family: var(--main-font);
+
+}
+
+/* EXPERIENCE SECTION */
+
+.diagonal {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-color: var(--main-color);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+
+
+.experiences {
+    padding-top: 6rem;
+}
+
+.experiences h2 {
+
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experiences div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.experiences img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+.experiences p {
+    text-align: center;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.skills h2 {
+
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.skill-container {
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.skills p {
+    width: 50%;
+}
+
+.bar-container,
+.bar-progress {
+    border-radius: 1rem;
+}
+
+
+.bar-container {
+    width: 35%;
+    border: solid;
+    height: 1rem;
+    border-color: var(--second-color);
+}
+
+.bar-progress {
+    width: 80%;
+    height: 100%;
+    background-color: var(--second-color);
+}
