@@ -105,6 +105,8 @@ body {
     height: 1rem;
     display: flex;
     justify-content: space-between;
+    border: solid;
+    border-color: var(--second-color);
 
 }
 
@@ -116,9 +118,19 @@ body {
 }
 
 .bar-progress {
-    width: 80%;
-
     background-color: var(--second-color);
+}
+
+.best {
+    width: 100%;
+}
+
+.good {
+    width: 75%;
+}
+
+.worst {
+    width: 25%;
 }
 
 /* .bar-fill {
