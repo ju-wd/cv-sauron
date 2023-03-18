@@ -1,7 +1,7 @@
 :root {
     --main-color: #E96820;
     --second-color: rgba(0, 0, 0, 0.947);
-    --white-color: aliceblue;
+    --third-color: aliceblue;
     --main-font: Verdana, Geneva, Tahoma, sans-serif;
 
 
@@ -56,6 +56,9 @@ body {
 
 .experiences p {
     text-align: center;
+    display: flex;
+    align-items: center;
+
 }
 
 /* SKILLS SECTION */
@@ -86,6 +89,7 @@ body {
 
 .skills p {
     width: 50%;
+    text-align: left;
 }
 
 .skills img {
@@ -101,12 +105,20 @@ body {
 
 .bar-container {
     width: 35%;
-    background-color: rgb(200, 85, 23);
+    background-color: #C35213;
     height: 1rem;
     display: flex;
     justify-content: space-between;
     border: solid;
     border-color: var(--second-color);
+
+}
+
+.glow {
+    animation: 1s linear 2.5s;
+    animation-name: glowing;
+    animation-fill-mode: forwards;
+
 
 }
 
@@ -119,11 +131,17 @@ body {
 
 .bar-progress {
     background-color: var(--second-color);
+    animation: 2s linear 1s slidein;
 }
 
 .best {
     width: 100%;
+
+
+
 }
+
+
 
 .good {
     width: 75%;
@@ -141,3 +159,33 @@ body {
     background-color: var(--main-color);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 } */
+
+
+/* ANIMATION TEST */
+
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+    }
+
+    to {
+        margin-right: 0%;
+
+    }
+
+
+}
+
+@keyframes glowing {
+    from {}
+
+    to {
+        -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+        /* -webkit-box-shadow: 0px 0px 35px 20px rgba(242, 203, 169, 0.75);
+        -moz-box-shadow: 0px 0px 35px 20px rgba(242, 203, 169, 0.75);
+        box-shadow: 0px 0px 35px 20px rgba(242, 203, 169, 0.75); */
+
+    }
+}
