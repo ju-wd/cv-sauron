@@ -1,3 +1,10 @@
+:root {
+    --main-color: #f76c6c;
+    --second-color: black;
+    --third-color: white;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,9 +15,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(9, 9, 9);
+    background-color: var(--second-color);
 }
-
 
 /* navbar  */
 
@@ -18,8 +24,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #E96820;
-    padding: 5px;
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 7px;
 }
 
 nav img {
@@ -34,11 +41,22 @@ nav ul {
 
 }
 
+
+
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 
 }
+
+
+
+li:hover {
+    background-color: rgb(18, 12, 12);
+    color: orange;
+    height: 100%;
+}
+
 
 
 /* Header */
@@ -48,19 +66,23 @@ header {
     align-items: flex-end;
     background-image: url(sauron.png);
     background-size: cover;
-    min-height: 350px;
+    min-height: 300px;
+    width: 100%;
 }
-
 
 header h1 {
     text-align: center;
     color: white;
     font-size: 20px;
-    margin-bottom: 10px;
 
 }
 
 section {
     color: white;
-    margin: 15px;
+    padding: 15px;
+}
+
+p {
+    margin-top: 8px;
+    line-height: 1.2;
 }
