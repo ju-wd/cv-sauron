@@ -16,6 +16,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--second-color);
+    width: 100%;
+    height: 100vh;
 }
 
 /* navbar  */
@@ -66,7 +68,9 @@ header {
     align-items: flex-end;
     background-image: url(sauron.png);
     background-size: cover;
-    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
     width: 100%;
 }
 
