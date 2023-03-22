@@ -1,6 +1,6 @@
 :root {
     --main-color: #E96820;
-    --second-color: rgba(0, 0, 0, 0.947);
+    --second-color: rgb(0, 0, 0);
     --third-color: aliceblue;
     --main-font: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -16,6 +16,39 @@
 body {
     background-color: var(--second-color);
     font-family: var(--main-font);
+
+}
+
+
+
+/* HEADER */
+header {
+
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+header div {
+    background-image: url(sauronHeader.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 80vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: auto;
+}
+
+
+
+header h1 {
+    width: auto;
+    margin-bottom: 20%;
 
 }
 
@@ -58,6 +91,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
+    font-size: 1rem;
 
 }
 
@@ -93,8 +127,8 @@ body {
 }
 
 .skills img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .bar-container,
