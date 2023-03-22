@@ -54,7 +54,7 @@ nav ul li {
 
 
 
-li:hover {
+li:hover  {
     background-color: rgb(18, 12, 12);
     color: orange;
     height: 100%;
