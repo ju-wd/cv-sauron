@@ -13,15 +13,35 @@
 </head>
 
 <body>
-    <nav>
+    <div id="navbar">
         <a href="index.html"><img src="sauron_480.png"></a>
-        <ul>
-            <li>A Propos</li>
-            <li>Skills</li>
-            <li>Autres</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
+
+        <div>
+
+            <input class="hamburger" type="checkbox" id="grid" tabindex="1">
+
+            <label for="grid">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </label>
+
+            <nav>
+
+                <ul>
+                    <li><a tabindex="1" href="#!">Rubrique 1</a></li>
+                    <li><a tabindex="1" href="#!">Rubrique 2</a></li>
+                    <li><a tabindex="1" href="#!">Rubrique 3</a></li>
+                    <li><a tabindex="1" href="#!">Rubrique 4</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
 
     <header>
         <h1> Sauron <br>
