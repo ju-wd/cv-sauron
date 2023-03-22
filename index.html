@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
     <title>CV - Sauron</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,38 +13,124 @@
 </head>
 
 <body>
+    <nav>
+        <a href="index.html"><img src="./sauron_480.png"></a>
+        <ul>
+            <li>A Propos</li>
+            <li>Skills</li>
+            <li>Autres</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
 
     <header>
+        <h1> Sauron <br>
+            Seigneur des ténèbres,créateur des anneaux du pouvoir</h1>
+
     </header>
-    <nav></nav>
+
+    <section class="apropos">
+        <h2>A Propos</h2>
+        <P>Moi c'est Sauron, le giga chad du Mordor. Soumettez vous ou subissez mon courroux.</P>
+    </section>
+
+
+
     <main>
-        <!-- LANGUE ET LOISIRS --> 
-        <section id ="LanguesEtLoisirs">
+
+
+        <!-- Sections de JM -->
+
+        <!-- Section expérience -->
+        <div class="diagonal">
+            <section class="experiences">
+                <h2>Mes Expériences</h2>
+                <div>
+                    <img src="morgothIconBlack.png" alt="">
+                    <p>Lieutenant de Morgoth le premier seigneur des Ténèbres</p>
+                </div>
+                <div>
+                    <img src="ringIconBlack2.png" alt="">
+                    <p>Créateur des Anneaux de Pouvoir et de l’Anneau Unique</p>
+                </div>
+                <div>
+                    <img src="volcano.png" alt="">
+                    <p>Dirigeant du Mordor et grand bâtisseur de Barad-Dûr</p>
+                </div>
+                <div>
+                    <img src="orc.png" alt="">
+                    <p>Chef de ma propre armée d’Orques Trolls et autres créatures badass</p>
+                </div>
+
+            </section>
+            <section class="skills">
+                <h2>Mes Skills</h2>
+                <div class="skill-container">
+                    <div class="bar-container glow">
+
+                        <div class="bar-progress best"></div>
+
+                        <!-- <div class="bar-fill"></div> -->
+                    </div>
+                    <img src="magician-hat.png" alt="">
+                    <p>Maîtrise de la magie noire et de la sorcellerie</p>
+                </div>
+                <div class="skill-container">
+                    <div class="bar-container">
+                        <div class="bar-progress good"></div>
+                        <!-- <div class="bar-fill"></div> -->
+                    </div>
+                    <img src="marionette.png" alt="">
+                    <p>Capacité de corruption et de manipulation</p>
+                </div>
+                <div class="skill-container">
+                    <div class="bar-container glow">
+                        <div class="bar-progress best"></div>
+                        <!-- <div class="bar-fill"></div> -->
+                    </div>
+                    <img src="anvil.png" alt="">
+                    <p>Connaissance approfondi en joaillerie</p>
+                </div>
+                <div class="skill-container" title="J'ai perdu Ok, pas la peine de me le rappeler">
+                    <div class="bar-container">
+                        <div class="bar-progress worst"></div>
+                        <!-- <div class="bar-fill"></div> -->
+                    </div>
+                    <img src="lieutenant.png" alt="">
+                    <p>Leadership et gestion d’armée</p>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- LANGUE ET LOISIRS -->
+        <section id="LanguesEtLoisirs">
 
             <h2>Langues et Loisirs</h2>
-        <div class="conteneur">
-            <div>
-                <img class="alignLeft" src="EyeSauron.png">
-                <p>Noir Parler (...)</p> 
-            </div>
+            <div class="conteneur">
+                <div>
+                    <img class="alignLeft" src="EyeSauron.png">
+                    <p>Noir Parler (...)</p>
+                </div>
 
-            <div>
-                <img class="alignLeft" src="EyeSauron.png">
-                <p>Sindarin</p> 
-            </div>
+                <div>
+                    <img class="alignLeft" src="EyeSauron.png">
+                    <p>Sindarin</p>
+                </div>
 
-            <div>
-                <img class="alignLeft" src="EyeSauron.png">
-                <p>Aucuns loisirs, sauron est entièremenent dédié à sa quête de domination</p> 
+                <div>
+                    <img class="alignLeft" src="EyeSauron.png">
+                    <p>Aucuns loisirs, sauron est entièremenent dédié à sa quête de domination</p>
+                </div>
             </div>
-        </div>
 
         </section>
 
         <!-- CONTACTS -->
 
-        <section>
-            <div id ="contact">
+        <section class="contact">
+            <div id="contact">
                 <a href="https://www.google.com/">Mail</a>
                 <a href="https://www.linkedin.com">Linkedin</a>
             </div>

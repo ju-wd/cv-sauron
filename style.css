@@ -1,53 +1,322 @@
+:root {
+    --main-color: #E96820;
+    --second-color: rgb(0, 0, 0);
+    --third-color: rgb(255, 233, 208);
+    --main-font: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
-:root{
-    --maincolor: black;
-    --secondcolor: #E96820;
-    --thirdcolor: white;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--second-color);
+    width: 100%;
+    height: 100vh;
+}
+
+/* navbar  */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 7px;
+}
+
+nav img {
+    width: 3rem;
+    margin: 0;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
 }
 
 
-main{
-    background-color: var(--maincolor);
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+
 }
 
 
-h2 {
-    color: var(--thirdcolor);
+
+li:hover {
+    background-color: rgb(18, 12, 12);
+    color: orange;
+    height: 100%;
+}
+
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(sauron.png);
+    background-size: 100%;
+    height: 80vw;
+    width: 80%;
+    margin: auto;
+    font-family: var(--main-font);
+}
+
+header h1 {
+    width: auto;
+    text-align: center;
+    color: var(--third-color);
+    font-size: 20px;
+    margin-bottom: 15%;
+    font-weight: 100;
+
+}
+
+.apropos {
+    color: var(--third-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: var(--main-font);
+}
+
+.apropos h2 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: var(--third-color);
+    font-weight: 100;
+
+}
+
+.apropos p {
+    width: 80%;
+    margin: auto;
+    line-height: 1.2;
+    text-align: justify;
+    color: var(--third-color);
+}
+
+
+/* EXPERIENCE SECTION */
+
+.diagonal {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-color: var(--main-color);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+
+}
+
+
+.experiences {
+    padding-top: 6rem;
+    color: var(--second-color);
+    font-family: var(--main-font);
+}
+
+.experiences h2 {
+
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experiences div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.experiences img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+.experiences p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+/* SKILLS SECTION */
+
+.skills {
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: var(--second-color);
+    font-family: var(--main-font);
+}
+
+.skills h2 {
+
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.skill-container {
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.skills p {
+    width: 50%;
+    text-align: left;
+}
+
+.skills img {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bar-container,
+.bar-progress {
+    border-radius: 3rem;
+}
+
+
+.bar-container {
+    width: 35%;
+    background-color: #C35213;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    border-color: var(--second-color);
+
+}
+
+.glow {
+    animation: 1s linear 2.5s;
+    animation-name: glowing;
+    animation-fill-mode: forwards;
+
+
+}
+
+.bar-container p {
+    width: fit-content;
+    font-size: smaller;
+
+
+}
+
+.bar-progress {
+    background-color: var(--second-color);
+    animation: 2s linear 1s slidein;
+}
+
+.best {
+    width: 100%;
+}
+
+
+
+.good {
+    width: 75%;
+}
+
+.worst {
+    width: 25%;
+}
+
+/* .bar-fill {
+    height: 85%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 18%;
+    background-color: var(--main-color);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+} */
+
+
+/* ANIMATION TEST */
+
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+    }
+
+    to {
+        margin-right: 0%;
+
+    }
+
+
+}
+
+@keyframes glowing {
+    from {}
+
+    to {
+        -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+        /* -webkit-box-shadow: 0px 0px 35px 20px rgba(242, 203, 169, 0.75);
+        -moz-box-shadow: 0px 0px 35px 20px rgba(242, 203, 169, 0.75);
+        box-shadow: 0px 0px 35px 20px rgba(242, 203, 169, 0.75); */
+
+    }
+
+}
+
+/* CONTACT */
+
+.contact h2 {
+    color: var(--main-color);
     text-align: center;
     font-size: 17px;
     margin-top: 0;
 }
 
-
-p{
-    color: var(--thirdcolor);
+.contact p {
+    color: var(--third-color);
     text-align: left;
     font-size: 13px;
     width: 70%;
 }
 
-
-a{
+.contact a {
     display: flex;
-    background-color: var(--maincolor);
-    color: var(--secondcolor);
+    background-color: var(--second-color);
+    color: var(--third-color;)
     width: 10em;
     padding: 3%;
     text-align: center;
-    border: 2px solid var(--secondcolor);
+    border: 2px solid var(--main-color);
     justify-content: space-around;
     font-size: 17px;
     text-decoration: none;
-
 }
 
-
-a:hover{
-    background-color: var(--secondcolor);
-    border: 2px solid var(--thirdcolor);
+.contact a:hover {
+    background-color: var(--second-color);
+    border: 2px solid var(--third-color);
     color: var(--maincolor);
 }
 
@@ -66,30 +335,25 @@ a:hover{
 #LanguesEtLoisirs img {
     display: block;
     width: 3rem;
-    height: 2rem;  
-    
+    height: 2rem;
+
 
 }
 
+/* FOOTER */
 
-.conteneur div {
-    display: flex;
-    justify-content: space-between;
-    margin:auto;
-    width: 80%;
-    align-items: center;
-    
-}
-
-footer{
-    background-color: var(--secondcolor);
+footer {
+    background-color: var(--main-color);
     text-align: center;
     font-size: 12px;
     padding: 13px;
 }
 
+.conteneur div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    align-items: center;
 
-body{
-    margin:0;
 }
-
