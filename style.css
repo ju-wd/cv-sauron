@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+main{
+    background-color: var(--maincolor);
+}
+
+h2 {
+    color: var(--thirdcolor);
+    text-align: center;
+    font-size: 17px;
+    margin-top: 0;
+}
+
+p{
+    color: var(--thirdcolor);
+    text-align: left;
+    font-size: 13px;
+    width: 70%;
+}
+
+a{
+    display: flex;
+    background-color: var(--maincolor);
+    color: var(--secondcolor);
+    width: 70%;
+    padding: 3%;
+    text-align: center;
+    border: 2px solid var(--secondcolor);
+    justify-content: space-around;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: var(--secondcolor);
+    border: 2px solid var(--thirdcolor);
+    color: var(--maincolor);
+}
+
+#contact {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+
+#LanguesEtLoisirs img {
+    display: block;
+    width: 3rem;
+    height: 2rem;  
+    
+
+}
+
+footer{
+    background-color: var(--secondcolor);
+    text-align: center;
+    font-size: 12px;
+    padding: 13px;
+}
+
+.conteneur div {
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    width: 80%;
+    align-items: center;
+    
+}
+
+:root{
+    --maincolor: black;
+    --secondcolor: #E96820;
+    --thirdcolor: white;
+}
+
+body{
+    margin:0;
+    padding: ;
+}
+
