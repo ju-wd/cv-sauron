@@ -289,3 +289,76 @@ header h1 {
     }
 
 }
+
+/* CONTACT */
+
+.contact h2 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 17px;
+    margin-top: 0;
+}
+
+.contact p {
+    color: var(--thirdcolor);
+    text-align: left;
+    font-size: 13px;
+    width: 70%;
+}
+
+.contact a {
+    display: flex;
+    background-color: var(--maincolor);
+    color: var(--main-color);
+    width: 10em;
+    padding: 3%;
+    text-align: center;
+    border: 2px solid var(--main-color);
+    justify-content: space-around;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+.contact a:hover {
+    background-color: var(--secondcolor);
+    border: 2px solid var(--thirdcolor);
+    color: var(--maincolor);
+}
+
+#contact {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+
+#LanguesEtLoisirs img {
+    display: block;
+    width: 3rem;
+    height: 2rem;
+
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 12px;
+    padding: 13px;
+}
+
+.conteneur div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+
+}
