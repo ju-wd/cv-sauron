@@ -235,9 +235,6 @@ header h1 {
 
 .best {
     width: 100%;
-
-
-
 }
 
 
@@ -307,15 +304,11 @@ header h1 {
 }
 
 .contact a {
-
     display: flex;
     justify-content: space-around;
-
-    width: 70vw;
+    width: 70px;
     padding: 3vw;
     text-align: center;
-   
-    
     font-size: 17px;
     text-decoration: none;
     background-color: var(--secondcolor);
@@ -348,6 +341,14 @@ header h1 {
 
 
 }
+.conteneur div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+
+}
 
 /* FOOTER */
 
@@ -358,11 +359,3 @@ footer {
     padding: 13px;
 }
 
-.conteneur div {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 80%;
-    align-items: center;
-
-}
