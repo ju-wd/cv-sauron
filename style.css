@@ -304,7 +304,7 @@ header h1 {
 .contact a {
     display: flex;
     background-color: var(--second-color);
-    color: var(--third-color;)
+    color: var(--third-color);
     width: 10em;
     padding: 3%;
     text-align: center;
