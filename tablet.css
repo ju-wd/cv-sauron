@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+
+/* HEADER  */
+
+.apropos h2 {
+
+    text-align: center;
+}
+
+.apropos p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
