@@ -235,9 +235,6 @@ header h1 {
 
 .best {
     width: 100%;
-
-
-
 }
 
 
@@ -296,10 +293,12 @@ header h1 {
     color: var(--thirdcolor);
     text-align: center;
     font-size: 17px;
-    margin-top: 0;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 #LanguesEtLoisirs  p {
+
     color: var(--thirdcolor);
     text-align: left;
     font-size: 13px;
@@ -314,7 +313,6 @@ header h1 {
     width: 70vw;
     padding: 3vw;
     text-align: center;
-   
     
     font-size: 17px;
     text-decoration: none;
@@ -364,5 +362,5 @@ footer {
     margin: auto;
     width: 80%;
     align-items: center;
-
+    margin-bottom: 1rem;
 }
