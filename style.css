@@ -1,8 +1,8 @@
 :root {
-    --main-color: #E96820;
-    --second-color: rgb(0, 0, 0);
-    --third-color: rgb(255, 233, 208);
-    --main-font: Verdana, Geneva, Tahoma, sans-serif;
+    --maincolor: #E96820;
+    --secondcolor: rgb(0, 0, 0);
+    --thirdcolor: rgb(255, 233, 208);
+    --mainfont: Verdana, Geneva, Tahoma, sans-serif;
 
 
 }
@@ -17,7 +17,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--second-color);
+    background-color: var(--secondcolor);
     width: 100%;
     height: 100vh;
 }
@@ -28,7 +28,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--main-color);
+    background-color: var(--maincolor);
     width: 100%;
     padding: 7px;
 }
@@ -79,7 +79,7 @@ header {
 header h1 {
     width: auto;
     text-align: center;
-    color: var(--third-color);
+    color: var(--thirdcolor);
     font-size: 20px;
     margin-bottom: 15%;
     font-weight: 100;
@@ -87,17 +87,17 @@ header h1 {
 }
 
 .apropos {
-    color: var(--third-color);
+    color: var(--thirdcolor);
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-family: var(--main-font);
+    font-family: var(--mainfont);
 }
 
 .apropos h2 {
     width: 80%;
     margin: auto;
     margin-bottom: 2rem;
-    color: var(--third-color);
+    color: var(--thirdcolor);
     font-weight: 100;
 
 }
@@ -107,7 +107,7 @@ header h1 {
     margin: auto;
     line-height: 1.2;
     text-align: justify;
-    color: var(--third-color);
+    color: var(--thirdcolor);
 }
 
 
@@ -115,7 +115,7 @@ header h1 {
 
 .diagonal {
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    background-color: var(--main-color);
+    background-color: var(--maincolor);
     padding-bottom: 4rem;
     padding-top: 4rem;
 
@@ -124,8 +124,8 @@ header h1 {
 
 .experiences {
     padding-top: 6rem;
-    color: var(--second-color);
-    font-family: var(--main-font);
+    color: var(--secondcolor);
+    font-family: var(--mainfont);
 }
 
 .experiences h2 {
@@ -162,8 +162,8 @@ header h1 {
 
     margin-top: 4rem;
     margin-bottom: 4rem;
-    color: var(--second-color);
-    font-family: var(--main-font);
+    color: var(--secondcolor);
+    font-family: var(--mainfont);
 }
 
 .skills h2 {
@@ -209,7 +209,7 @@ header h1 {
     display: flex;
     justify-content: space-between;
     border: solid;
-    border-color: var(--second-color);
+    border-color: var(--secondcolor);
 
 }
 
@@ -229,7 +229,7 @@ header h1 {
 }
 
 .bar-progress {
-    background-color: var(--second-color);
+    background-color: var(--secondcolor);
     animation: 2s linear 1s slidein;
 }
 
@@ -292,14 +292,14 @@ header h1 {
 
 /* CONTACT */
 
-.contact h2 {
-    color: var(--main-color);
+#LanguesEtLoisirs h2 {
+    color: var(--thirdcolor);
     text-align: center;
     font-size: 17px;
     margin-top: 0;
 }
 
-.contact p {
+#LanguesEtLoisirs  p {
     color: var(--thirdcolor);
     text-align: left;
     font-size: 13px;
@@ -307,27 +307,31 @@ header h1 {
 }
 
 .contact a {
+
     display: flex;
-    background-color: var(--maincolor);
-    color: var(--main-color);
-    width: 10em;
-    padding: 3%;
-    text-align: center;
-    border: 2px solid var(--main-color);
     justify-content: space-around;
+
+    width: 70vw;
+    padding: 3vw;
+    text-align: center;
+   
+    
     font-size: 17px;
     text-decoration: none;
+    background-color: var(--secondcolor);
+    color: var(--maincolor);
+    border: 2px solid var(--maincolor);
 
 }
 
 .contact a:hover {
-    background-color: var(--secondcolor);
-    border: 2px solid var(--thirdcolor);
-    color: var(--maincolor);
+    background-color: var(--thirdcolor);
+    border: 2px solid var(--maincolor);
+    color: var(--secondcolor);
 }
 
 #contact {
-    height: 140px;
+    height: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -348,7 +352,7 @@ header h1 {
 /* FOOTER */
 
 footer {
-    background-color: var(--main-color);
+    background-color: var(--maincolor);
     text-align: center;
     font-size: 12px;
     padding: 13px;
