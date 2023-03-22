@@ -26,11 +26,18 @@ body {
 
 #navbar {
     display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
     align-items: center;
     justify-content: space-between;
     background-color: var(--main-color);
     width: 100%;
     padding: 7px;
+    z-index: 1;
+    border-bottom: solid var(--second-color);
+
+
 }
 
 #navbar img {
@@ -49,6 +56,7 @@ body {
 
 #grid {
     display: none;
+    z-index: 2;
 
 }
 
@@ -59,6 +67,8 @@ body {
     grid-template-rows: repeat(3, 10px);
     row-gap: .2rem;
     margin-right: 2rem;
+    z-index: 2;
+
 }
 
 
@@ -66,6 +76,7 @@ body {
     height: 0.5rem;
     background-color: var(--second-color);
     border-radius: 20px;
+    z-index: 2;
 
 }
 
@@ -73,6 +84,8 @@ body {
     height: 0.5rem;
 
     grid-area: 2/1;
+    z-index: 2;
+    background-color: var(--third-color);
 
 }
 
@@ -99,11 +112,12 @@ nav {
     position: fixed;
     right: 0;
     top: 0;
-    height: 100%;
+    height: fit-content;
     width: min(50%, 300px);
     background: rgba(0, 0, 0, 0.8);
-    transform: translateX(-100%);
+    transform: translateX(100%);
     will-change: transform;
+    z-index: 1;
 
 }
 
@@ -124,6 +138,14 @@ nav a {
     opacity: 0;
     visibility: hidden;
 
+}
+
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+    font-family: var(--main-font);
 }
 
 .hamburger:checked+label~nav {
@@ -164,7 +186,9 @@ li:hover {
 
 /* Header */
 
-header {
+#banner {
+
+
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -174,9 +198,12 @@ header {
     width: 80%;
     margin: auto;
     font-family: var(--main-font);
+    margin-top: 5rem;
+
+
 }
 
-header h1 {
+#banner h1 {
     width: auto;
     text-align: center;
     color: var(--third-color);
@@ -218,6 +245,7 @@ header h1 {
     background-color: var(--main-color);
     padding-bottom: 4rem;
     padding-top: 4rem;
+    z-index: 0;
 
 }
 
@@ -259,8 +287,8 @@ header h1 {
 /* SKILLS SECTION */
 
 .skills {
+    padding-top: 5rem;
 
-    margin-top: 4rem;
     margin-bottom: 4rem;
     color: var(--second-color);
     font-family: var(--main-font);
