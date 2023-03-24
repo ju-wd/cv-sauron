@@ -1,10 +1,36 @@
+h1 {
+    margin-top: 250px;
+}
 
 
 
-/*contact */
+.diagonal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+
+header {
+    background-image: url(sauron.png);
+}
+#experiences {
+}
+
+
+img {
+    width: 70px;
+}
 
 /* langue et loisir */  
+.skills :first-child {
+    align-self: center;
+}
+
+.skills {
+    margin-bottom: 15px;
+}
+
 #LanguesEtLoisirs  p {
     color: var(--thirdcolor);
 }
@@ -12,17 +38,14 @@
 
 #LanguesEtLoisirs h2 {
     color: var(--thirdcolor);
-    text-align: center;
-    justify-content: center;
 }
 
-#experiences {
-    
 
-}
-div {
-    margin-top: 80px;
-} 
+
+
+
+/*contact */
+
 a {
     padding: 10px; 
 }
@@ -39,10 +62,18 @@ a {
     height: 10px;
 
 }
+
+#contact {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
 .contact {
     padding-bottom: 55px;
 }
-.apropos {
-    padding-left: 600px;
-} 
+
 /* footer */
