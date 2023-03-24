@@ -1,8 +1,8 @@
 :root {
-    --main-color: #E96820;
-    --second-color: rgb(0, 0, 0);
-    --third-color: rgb(255, 233, 208);
-    --main-font: Verdana, Geneva, Tahoma, sans-serif;
+    --maincolor: #E96820;
+    --secondcolor: rgb(0, 0, 0);
+    --thirdcolor: rgb(255, 233, 208);
+    --mainfont: Verdana, Geneva, Tahoma, sans-serif;
 
 
 }
@@ -17,29 +17,169 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--second-color);
+    background-color: var(--secondcolor);
     width: 100%;
     height: 100vh;
 }
 
-/* navbar  */
+/* NAVBAR*/
 
-nav {
+#navbar {
     display: flex;
+    position: fixed;
+    height: 4rem;
+    left: 0;
+    top: 0;
     align-items: center;
-    justify-content: space-around;
-    background-color: var(--main-color);
+
+    justify-content: space-between;
+    background-color: var(--maincolor);
     width: 100%;
     padding: 7px;
+    z-index: 1;
+    border-bottom: solid var(--secondcolor);
+
+
 }
 
-nav img {
+#navbar img {
     width: 3rem;
     margin: 0;
 
 }
 
+/* BURGER MENU */
+
+
+
+* {
+    box-sizing: border-box
+}
+
+#grid {
+    display: none;
+    z-index: 2;
+
+}
+
+#grid+label {
+    cursor: pointer;
+    width: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, 10px);
+    row-gap: .2rem;
+    margin-right: 2rem;
+    z-index: 2;
+
+}
+
+
+#grid+label span {
+    height: 0.5rem;
+    background-color: var(--secondcolor);
+    border-radius: 20px;
+    z-index: 2;
+
+}
+
+#grid:checked+label span {
+    height: 0.5rem;
+
+    grid-area: 2/1;
+    z-index: 2;
+    background-color: var(--secondcolor);
+
+}
+
+#grid:checked+label span:nth-child(2) {
+    height: 0.5rem;
+
+    opacity: 0;
+
+}
+
+#grid:checked+label span:first-of-type {
+
+    transform: rotate(45deg)
+}
+
+#grid:checked+label span:last-of-type {
+
+    transform: rotate(-45deg);
+
+}
+
+nav {
+
+    position: fixed;
+    right: 0;
+    top: 4rem;
+    height: 45%;
+    width: 100%;
+    /* width: min(50%, 300px); */
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateX(100%);
+    will-change: transform;
+    z-index: 1;
+
+
+}
+
 nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+nav ul div {
+    height: 10px;
+    margin: auto;
+    width: 120px;
+    border-bottom: solid white 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.vide {
+    height: 0;
+    border: none;
+    margin: 0;
+}
+
+nav a {
+    font-size: 1.25rem;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+    font-family: var(--mainfont);
+}
+
+.hamburger:checked+label~nav {
+
+    transform: unset;
+    /*on revient à l'état initial*/
+
+}
+
+.hamburger:checked+label~nav a {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+/* nav ul {
     list-style: none;
     padding: 0;
 
@@ -54,32 +194,37 @@ nav ul li {
 
 
 
-li:hover {
+li:hover  {
     background-color: rgb(18, 12, 12);
     color: orange;
     height: 100%;
 }
 
-
+ */
 
 /* Header */
 
-header {
+#banner {
+
+
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(sauron.png);
+    background-image: url(./sauron.png);
     background-size: 100%;
     height: 80vw;
     width: 80%;
     margin: auto;
-    font-family: var(--main-font);
+    font-family: var(--mainfont);
+    margin-top: 5rem;
+
+
 }
 
-header h1 {
+#banner h1 {
     width: auto;
     text-align: center;
-    color: var(--third-color);
+    color: var(--thirdcolor);
     font-size: 20px;
     margin-bottom: 15%;
     font-weight: 100;
@@ -87,17 +232,17 @@ header h1 {
 }
 
 .apropos {
-    color: var(--third-color);
+    color: var(--thirdcolor);
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-family: var(--main-font);
+    font-family: var(--mainfont);
 }
 
 .apropos h2 {
     width: 80%;
     margin: auto;
     margin-bottom: 2rem;
-    color: var(--third-color);
+    color: var(--thirdcolor);
     font-weight: 100;
 
 }
@@ -107,7 +252,7 @@ header h1 {
     margin: auto;
     line-height: 1.2;
     text-align: justify;
-    color: var(--third-color);
+    color: var(--thirdcolor);
 }
 
 
@@ -115,17 +260,18 @@ header h1 {
 
 .diagonal {
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    background-color: var(--main-color);
+    background-color: var(--maincolor);
     padding-bottom: 4rem;
     padding-top: 4rem;
+    z-index: 0;
 
 }
 
 
 .experiences {
     padding-top: 6rem;
-    color: var(--second-color);
-    font-family: var(--main-font);
+    color: var(--secondcolor);
+    font-family: var(--mainfont);
 }
 
 .experiences h2 {
@@ -159,11 +305,11 @@ header h1 {
 /* SKILLS SECTION */
 
 .skills {
+    padding-top: 5rem;
 
-    margin-top: 4rem;
     margin-bottom: 4rem;
-    color: var(--second-color);
-    font-family: var(--main-font);
+    color: var(--secondcolor);
+    font-family: var(--mainfont);
 }
 
 .skills h2 {
@@ -209,7 +355,7 @@ header h1 {
     display: flex;
     justify-content: space-between;
     border: solid;
-    border-color: var(--second-color);
+    border-color: var(--secondcolor);
 
 }
 
@@ -217,6 +363,7 @@ header h1 {
     animation: 1s linear 2.5s;
     animation-name: glowing;
     animation-fill-mode: forwards;
+
 
 
 }
@@ -229,7 +376,7 @@ header h1 {
 }
 
 .bar-progress {
-    background-color: var(--second-color);
+    background-color: var(--secondcolor);
     animation: 2s linear 1s slidein;
 }
 
@@ -292,14 +439,14 @@ header h1 {
 
 /* CONTACT */
 
-.contact h2 {
-    color: var(--main-color);
+#LanguesEtLoisirs h2 {
+    color: var(--thirdcolor);
     text-align: center;
     font-size: 17px;
     margin-top: 0;
 }
 
-.contact p {
+#LanguesEtLoisirs p {
     color: var(--thirdcolor);
     text-align: left;
     font-size: 13px;
@@ -307,27 +454,31 @@ header h1 {
 }
 
 .contact a {
+
     display: flex;
-    background-color: var(--maincolor);
-    color: var(--main-color);
-    width: 10em;
-    padding: 3%;
-    text-align: center;
-    border: 2px solid var(--main-color);
     justify-content: space-around;
+
+    width: 70vw;
+    padding: 3vw;
+    text-align: center;
+
+
     font-size: 17px;
     text-decoration: none;
+    background-color: var(--secondcolor);
+    color: var(--maincolor);
+    border: 2px solid var(--maincolor);
 
 }
 
 .contact a:hover {
-    background-color: var(--secondcolor);
-    border: 2px solid var(--thirdcolor);
-    color: var(--maincolor);
+    background-color: var(--thirdcolor);
+    border: 2px solid var(--maincolor);
+    color: var(--secondcolor);
 }
 
 #contact {
-    height: 140px;
+    height: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -347,8 +498,17 @@ header h1 {
 
 /* FOOTER */
 
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    font-family: var(--mainfont);
+    color: var(--secondcolor);
+}
+
 footer {
-    background-color: var(--main-color);
+    background-color: var(--maincolor);
     text-align: center;
     font-size: 12px;
     padding: 13px;

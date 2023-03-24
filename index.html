@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
     <title>CV - Sauron</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px)">
@@ -13,19 +14,48 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img src="sauron_480.png"></a>
-        <ul>
-            <li>A Propos</li>
-            <li>Skills</li>
-            <li>Autres</li>
-            <li>Contacts</li>
-        </ul>
-    </nav>
 
-    <header>
+    <div id="navbar">
+        <a href="index.html"><img src="sauron_480.png"></a>
+
+        <div>
+
+            <input class="hamburger" type="checkbox" id="grid" tabindex="1">
+
+            <label for="grid">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </label>
+
+            <nav>
+
+                <ul>
+                    <li><a tabindex="1" href="#top">A propos</a></li>
+                    <div class="1"></div>
+                    <li><a tabindex="1" href="#experiences">Expériences</a></li>
+                    <div class="2"></div>
+                    <li><a tabindex="1" href="#skills">Skills</a></li>
+                    <div class="3"></div>
+                    <li><a tabindex="1" href="#LanguesEtLoisirs">Loisirs</a></li>
+                    <div class="vide"></div>
+                    <div class="4"></div>
+                    <li><a tabindex="1" href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <header id="banner">
         <h1> Sauron <br>
-            Seigneur des ténèbres,créateur des anneaux du pouvoir</h1>
+            Seigneur des ténèbres, <br> Créateur des anneaux du pouvoir</h1>
 
     </header>
 
@@ -43,7 +73,7 @@
 
         <!-- Section expérience -->
         <div class="diagonal">
-            <section class="experiences">
+            <section id="experiences" class="experiences">
                 <h2>Mes Expériences</h2>
                 <div>
                     <img src="morgothIconBlack.png" alt="">
@@ -63,7 +93,7 @@
                 </div>
 
             </section>
-            <section class="skills">
+            <section id="skills" class="skills">
                 <h2>Mes Skills</h2>
                 <div class="skill-container">
                     <div class="bar-container glow">
@@ -131,12 +161,12 @@
 
         <section class="contact">
             <div id="contact">
-                <a href="https://www.google.com/">Mail</a>
-                <a href="https://www.linkedin.com">Linkedin</a>
+                <a href="https://www.google.com/" target="_blank">Mail</a>
+                <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
             </div>
         </section>
     </main>
-    <footer>&copy;JAEJM</footer>
+    <footer><a href="https://www.youtube.com/watch?v=EpcDH9faOQw" target="_blank">&copy;JAEJM</a></footer>
 </body>
 
 </html>
