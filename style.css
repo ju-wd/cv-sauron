@@ -117,6 +117,14 @@ body {
 
 }
 
+#navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+}
+
 #navbar-mobile nav {
 
     position: fixed;
@@ -161,8 +169,7 @@ nav ul {
 nav a {
     font-size: 1.25rem;
     color: white;
-    opacity: 0;
-    visibility: hidden;
+
 
 }
 
