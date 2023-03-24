@@ -101,7 +101,6 @@ body {
 
 #grid:checked+label span:nth-child(2) {
     height: 0.5rem;
-
     opacity: 0;
 
 }
@@ -117,10 +116,10 @@ body {
 
 }
 
-#navbar-mobile nav {
+nav {
 
     position: fixed;
-    right: 0;
+    left: 0;
     top: 4rem;
     height: 45%;
     width: 100%;
