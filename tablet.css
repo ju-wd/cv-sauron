@@ -1,0 +1,114 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+
+#navbar-mobile {
+    display: none;
+}
+
+#navbar-tablet {
+    display: flex
+}
+
+/* HEADER  */
+
+header h1 {
+    font-family: var(--mainfont);
+    font-size: 36px;
+}
+
+.apropos h2 {
+
+    text-align: center;
+    font-family: var(--mainfont);
+    font-size: var(--mainfontsize)
+}
+
+.apropos p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    font-size: var(--secondfontsize);
+}
+
+.experiences h2 {
+    font-size: var(--mainfontsize);
+}
+
+.experiences p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.skills h2 {
+    font-size: var(--mainfontsize);
+}
+
+.skills p {
+    font-size: var(--secondfontsize);
+}
+
+/* CONTACT */
+
+#LanguesEtLoisirs h2 {
+    color: var(--thirdcolor);
+    text-align: center;
+    font-size: var(--mainfontsize);
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-family: var(--mainfont);
+}
+
+#LanguesEtLoisirs p {
+    color: var(--thirdcolor);
+    text-align: left;
+    font-size: var(--secondfontsize);
+    width: 70%;
+    font-family: var(--mainfont);
+}
+
+#LanguesEtLoisirs img {
+    display: block;
+    width: 4rem;
+    height: 3rem;
+    margin-left: 6rem;
+}
+
+.conteneur div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.contact a {
+
+    width: 50%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: var(--mainfont);
+}
+
+#contact {
+    margin-top: 5.5rem;
+    margin-bottom: 4rem;
+}
+
+footer {
+    padding: 25px;
+    font-family: (--main-font);
+    font-size: 20px;
+}
