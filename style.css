@@ -31,17 +31,13 @@ body {
     left: 0;
     top: 0;
     align-items: center;
-<<<<<<< HEAD
+
     justify-content: space-between;
-    background-color: var(--main-color);
-=======
-    justify-content: space-around;
     background-color: var(--maincolor);
->>>>>>> f930c10c89ef151f34d710ce3342d9629dfd8f0d
     width: 100%;
     padding: 7px;
     z-index: 1;
-    border-bottom: solid var(--second-color);
+    border-bottom: solid var(--secondcolor);
 
 
 }
@@ -80,7 +76,7 @@ body {
 
 #grid+label span {
     height: 0.5rem;
-    background-color: var(--second-color);
+    background-color: var(--secondcolor);
     border-radius: 20px;
     z-index: 2;
 
@@ -91,7 +87,7 @@ body {
 
     grid-area: 2/1;
     z-index: 2;
-    background-color: var(--second-color);
+    background-color: var(--secondcolor);
 
 }
 
@@ -167,7 +163,7 @@ nav a:visited,
 nav a:hover,
 nav a:active {
     text-decoration: none;
-    font-family: var(--main-font);
+    font-family: var(--mainfont);
 }
 
 .hamburger:checked+label~nav {
@@ -214,12 +210,12 @@ li:hover  {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(sauron.png);
+    background-image: url(./sauron.png);
     background-size: 100%;
     height: 80vw;
     width: 80%;
     margin: auto;
-    font-family: var(--main-font);
+    font-family: var(--mainfont);
     margin-top: 5rem;
 
 
@@ -450,7 +446,7 @@ li:hover  {
     margin-top: 0;
 }
 
-#LanguesEtLoisirs  p {
+#LanguesEtLoisirs p {
     color: var(--thirdcolor);
     text-align: left;
     font-size: 13px;
@@ -465,8 +461,8 @@ li:hover  {
     width: 70vw;
     padding: 3vw;
     text-align: center;
-   
-    
+
+
     font-size: 17px;
     text-decoration: none;
     background-color: var(--secondcolor);
@@ -507,17 +503,12 @@ footer a:visited,
 footer a:hover,
 footer a:active {
     text-decoration: none;
-    font-family: var(--main-font);
-    color: var(--second-color);
+    font-family: var(--mainfont);
+    color: var(--secondcolor);
 }
 
 footer {
-<<<<<<< HEAD
     background-color: var(--maincolor);
-=======
-    margin-top: 2rem;
-    background-color: var(--main-color);
->>>>>>> menu-burger
     text-align: center;
     font-size: 12px;
     padding: 13px;
