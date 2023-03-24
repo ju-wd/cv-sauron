@@ -117,7 +117,7 @@ body {
 
 }
 
-nav {
+#navbar-mobile nav {
 
     position: fixed;
     right: 0;
@@ -143,7 +143,7 @@ nav ul {
 }
 
 
-nav ul div {
+#navbar-mobile nav ul div {
     height: 10px;
     margin: auto;
     width: 120px;
