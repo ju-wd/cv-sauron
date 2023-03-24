@@ -3,6 +3,8 @@
     --secondcolor: rgb(0, 0, 0);
     --thirdcolor: rgb(255, 233, 208);
     --mainfont: Verdana, Geneva, Tahoma, sans-serif;
+    --mainfontsize: 32px;
+    --secondfontsize: 20px;
 
 
 }
@@ -189,7 +191,7 @@ nav a:active {
 nav ul li {
     display: inline-block;
     margin-right: 10px;
-
+    font-size: 24px;
 }
 
 
@@ -492,8 +494,6 @@ li:hover  {
     display: block;
     width: 3rem;
     height: 2rem;
-
-
 }
 
 /* FOOTER */
