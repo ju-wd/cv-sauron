@@ -117,7 +117,15 @@ body {
 
 }
 
-nav {
+#navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+}
+
+#navbar-mobile nav {
 
     position: fixed;
     right: 0;
@@ -143,7 +151,7 @@ nav ul {
 }
 
 
-nav ul div {
+#navbar-mobile nav ul div {
     height: 10px;
     margin: auto;
     width: 120px;
@@ -161,8 +169,7 @@ nav ul div {
 nav a {
     font-size: 1.25rem;
     color: white;
-    opacity: 0;
-    visibility: hidden;
+
 
 }
 
