@@ -495,11 +495,19 @@ li:hover  {
 
 }
 
-
 #LanguesEtLoisirs img {
     display: block;
     width: 3rem;
     height: 2rem;
+}
+
+.conteneur div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 /* FOOTER */
@@ -520,11 +528,3 @@ footer {
     padding: 13px;
 }
 
-.conteneur div {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 80%;
-    align-items: center;
-    margin-bottom: 1rem;
-}
