@@ -323,7 +323,7 @@ header h1 {
 }
 
 .contact a:hover {
-    background-color: var(--thirdcolor);
+    background-color: var(--maincolor);
     border: 2px solid var(--maincolor);
     color: var(--secondcolor);
 }
