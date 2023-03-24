@@ -11,6 +11,14 @@ nav ul {
     margin-right: 5%;
 }
 
+#navbar-mobile {
+    display: none;
+}
+
+#navbar-tablet {
+    display: flex
+}
+
 /* HEADER  */
 
 header h1 {

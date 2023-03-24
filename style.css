@@ -26,6 +26,8 @@ body {
 
 /* NAVBAR*/
 
+
+
 #navbar {
     display: flex;
     position: fixed;
@@ -48,6 +50,10 @@ body {
     width: 3rem;
     margin: 0;
 
+}
+
+#navbar-tablet {
+    display: none;
 }
 
 /* BURGER MENU */
