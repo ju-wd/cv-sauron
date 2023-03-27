@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Elvish";
+    src: url('./fonts/tengwar_annatar/tngani.ttf');
+    src: url('./fonts/tengwar_annatar/tngani.ttf') format('truetype'),
+}
+
 :root {
     --maincolor: #E96820;
     --secondcolor: rgb(0, 0, 0);
@@ -8,6 +14,7 @@
 
 
 }
+
 
 * {
     box-sizing: border-box;
@@ -120,8 +127,9 @@ body {
     position: fixed;
     left: 0;
     top: 4rem;
-    height: 45%;
+    height: fit-content;
     width: 100%;
+    padding-bottom: 2rem;
     /* width: min(50%, 300px); */
     background: rgba(0, 0, 0, 0.8);
     transform: translateX(100%);
@@ -144,6 +152,7 @@ nav ul {
     margin-top: 2rem;
     width: 100%;
     text-align: center;
+
 
 }
 
@@ -168,6 +177,12 @@ nav a {
     color: white;
 
 
+}
+
+#navmenu li {
+    color: white;
+    font-family: var(--mainfont);
+    font-size: 1.25rem;
 }
 
 nav a:link,
@@ -454,6 +469,7 @@ li:hover  {
     font-size: 17px;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    font-family: var(--mainfont);
 }
 
 #LanguesEtLoisirs p {
@@ -462,24 +478,22 @@ li:hover  {
     text-align: left;
     font-size: 13px;
     width: 70%;
+    font-family: var(--mainfont);
 }
 
 .contact a {
 
     display: flex;
     justify-content: space-around;
-
     width: 70vw;
     padding: 3vw;
     text-align: center;
-
-
-    
     font-size: 17px;
     text-decoration: none;
     background-color: var(--secondcolor);
     color: var(--maincolor);
     border: 2px solid var(--maincolor);
+    font-family: var(--mainfont);
 
 }
 
@@ -531,4 +545,3 @@ footer {
     font-size: 12px;
     padding: 13px;
 }
-

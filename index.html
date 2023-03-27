@@ -51,6 +51,8 @@
 
                     <div class="4"></div>
                     <li><a tabindex="1" href="#contact">Contact</a></li>
+                    <div class="4"></div>
+                    <li id="elvishLang">Noir-Parler</li>
 
                 </ul>
             </nav>
@@ -176,5 +178,24 @@
     </main>
     <footer><a href="https://www.youtube.com/watch?v=EpcDH9faOQw" target="_blank">&copy;JAEJM</a></footer>
 </body>
+
+<script>
+    let rootElement = document.querySelector(':root');
+    let isElvishOn = false;
+
+    document.getElementById("elvishLang").addEventListener("click", changeToElvish)
+
+    function changeToElvish() {
+        if (!isElvishOn) {
+            rootElement.style.setProperty('--mainfont', 'Elvish');
+            isElvishOn = true
+        }
+        else {
+            rootElement.style.setProperty('--mainfont', 'Verdana, Geneva, Tahoma, sans-serif');
+            isElvishOn = false;
+        }
+
+    }
+</script>
 
 </html>
